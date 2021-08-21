@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>Delete Admin</title>
+</head>
+
+<body>
+    <div>
+    <div>
+        <br><br><br><a class="btn btn-success" href="#!Admin/All">Back to List</a><br>
+    </div>
+        <br><br>
+        <h2>Delete Admin, {{ deleteAdmin.First_name }} {{ deleteAdmin.Last_name }} </h2>
+        <form method="POST" >
+            <br>Admin ID : {{ deleteAdmin.Id}}
+            <br>First Name : {{ deleteAdmin.First_name }}
+            <br>Last Name : {{ deleteAdmin.Last_name }}
+            <br>Username : {{ deleteAdmin.Username }}
+            <br>Gender : {{ deleteAdmin.Gender }}
+            <br>Address : {{ deleteAdmin.Address }}
+            <br>E-mail : {{ deleteAdmin.Email }}
+            <br>Phone : {{ deleteAdmin.Phone }}
+            <br>Date of Birth : {{ deleteAdmin.DateOfBirth }}
+            <br>Date of Joining : {{ deleteAdmin.JoiningDate }}
+            <br>Marital Status : {{ deleteAdmin.Marital_status }}
+            <br>Blood group : {{ deleteAdmin.Blood_group }}
+            <br>Salary : {{ deleteAdmin.Salary }}
+        </form>
+    </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <br><input type="submit" value="Delete" ng-click="deleteAdminn()" class="btn btn-danger" />
+                    </div>
+                </div>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>Organization Details</title>
+</head>
+
+<body>
+    <div>
+        <br><br><br>
+        <h2>Details Organization</h2>
+            <div>
+                <br><br><br><a class="btn btn-success" href="#!Organization/All">Back to List</a><br>
+            </div>
+        <form>
+            <br>Organization ID : {{ deleteOrganization.Id}}
+            <br>Organization Name : {{ deleteOrganization.Name }}
+            <br>Username : {{ deleteOrganization.Username }}
+            <br>Address : {{ deleteOrganization.Address }}
+            <br>E-mail : {{ deleteOrganization.Email }}
+            <br>Phone : {{ deleteOrganization.Phone }}
+            <br>Website : {{ deleteOrganization.Website }}
+        </form>
+    </div>
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <br><input type="submit" value="Delete" ng-click="deleteOrganizationn()" class="btn btn-danger" />
+                        </div>
+                    </div>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>All User</title>
+</head>
+
+<body>
+    <div>
+        <br><br><br><h2>All User List:</h2><br>
+        <form>
+            <span style="color:red">{{msg}}</span>
+            <table class="table table-hover">
+                <tr>
+                    <th>User ID</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                    <th>Gender</th>
+                    <th>Address</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                </tr>
+                <tr ng-repeat="a in allUser">
+                    <td>{{a.Id}}</td>
+                    <td><a class="btn btn-success" href="#!User/Edit/{{a.Id}}">Edit</a></td>
+                    <td><a class="btn btn-default" href="#!User/Details/{{a.Id}}">Details</a></td>
+                    <td><a class="btn btn-danger" href="#!User/Delete/{{a.Id}}">Delete</a></td>
+                    <td>{{ a.First_name }}</td>
+                    <td>{{ a.Last_name }}</td>
+                    <td>{{ a.Username }}</td>
+                    <td>{{ a.Gender }}</td>
+                    <td>{{ a.Address }}</td>
+                    <td>{{ a.Email }}</td>
+                    <td>{{ a.Phone }}</td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>

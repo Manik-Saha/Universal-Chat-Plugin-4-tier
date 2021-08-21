@@ -1,0 +1,206 @@
+<html>
+
+<head>
+    <title>Create Admin</title>
+</head>
+
+<body>
+    <div>
+        <br><br><br><a class="btn btn-success" href="#!Admin/All">Back to List</a><br>
+    </div>
+    <div>
+        <form name="addAdmin" method="post">
+            <fieldset>
+                <div class="form-group">
+                    <br> <label class="control-label col-md-2" for="First_name">First_name</label>
+                    <div class="col-md-10">
+                        <input class="form-control text-box single-line" ng-model="admin.First_name" id="First_name"
+                            name="First_name" type="text" value="" required />
+                        <span style="color:red"
+                            ng-show="addAdmin.First_name.$touched && addAdmin.First_name.$invalid">The first name is
+                            required.</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Last_name">Last_name</label>
+                    <div class="col-md-10">
+                        <input class="form-control text-box single-line" ng-model="admin.Last_name" placeholder=""
+                            id="Last_name" name="Last_name" type="text" value="" required/>
+                        <span style="color:red" ng-show="addAdmin.Last_name.$touched && addAdmin.Last_name.$invalid">The
+                            last name is
+                            required.</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Password">Password</label>
+                    <div class="col-md-10">
+                        <input class="form-control text-box single-line" ng-model="admin.password" placeholder=""
+                            id="Password" name="Password" type="password" value="" required />
+                        <span style="color:red" ng-show="addAdmin.Password.$touched && addAdmin.Password.$invalid">The
+                            Password is
+                            required.</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="CPassword">Confirm Password</label>
+                    <div class="col-md-10">
+                        <input class="form-control text-box single-line" id="CPassword" name="CPassword" type="password"
+                            value="" required/>
+                        <span style="color:red" ng-show="addAdmin.CPassword.$touched && addAdmin.CPassword.$invalid">The
+                            Conform Password is
+                            required.</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Username">Username</label>
+                    <div class="col-md-10">
+                        <input class="form-control text-box single-line" ng-model="admin.username" placeholder=""
+                            id="Username" name="Username" type="text" value="" required />
+                        <span style="color:red" ng-show="addAdmin.Username.$touched && addAdmin.Username.$invalid">The
+                            Username is
+                            required.</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Gender">Gender</label>
+                    <div class="col-md-10">
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="radio" ng-model="admin.Gender" name="Gender" id="Gender" value="Male">
+                                    <label>Male</label>
+
+                                    <input type="radio" ng-model="admin.Gender" name="Gender" id="Gender"
+                                        value="Female">
+                                    <label>Female</label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Addresss">Addresss</label>
+                    <div class="col-md-10">
+                        <input class="form-control text-box single-line" ng-model="admin.Addresss" id="Addresss"
+                            name="Addresss" type="text" value="" required/>
+                        <span style="color:red" ng-show="addAdmin.Addresss.$touched && addAdmin.Addresss.$invalid">The
+                            Address is
+                            required.</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Email">Email</label>
+                    <div class="col-md-10">
+                        <input class="form-control text-box single-line" id="Email" ng-model="admin.Email" name="Email"
+                            type="email" value="" required/>
+                        <span style="color:red" ng-show="addAdmin.Email.$touched && addAdmin.Email.$invalid">The Email
+                            is not
+                            valid.</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Phone">Phone</label>
+                    <div class="col-md-10">
+                        <input class="form-control text-box single-line" id="Phone" ng-model="admin.Phone" name="Phone"
+                            type="text" value="" required/>
+                        <span style="color:red" ng-show="addAdmin.Phone.$touched && addAdmin.Phone.$invalid">The Phone
+                            is
+                            required.</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="DateOfBirth">DateOfBirth</label>
+                    <div class="col-md-10">
+                        <input class="form-control text-box single-line" ng-model="admin.DateOfBirth" data-val="true"
+                            data-val-date="The field DateOfBirth must be a date."
+                            data-val-required="The DateOfBirth field is required." id="DateOfBirth" name="DateOfBirth"
+                            type="date" value="" required/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Salary">Salary</label>
+                    <div class="col-md-10">
+                        <input class="form-control text-box single-line" ng-model="admin.Salary" data-val="true"
+                            data-val-number="The field Salary must be a number."
+                            data-val-required="The Salary field is required." id="Salary" name="Salary" type="number"
+                            value="" required/>
+                        <span style="color:red" ng-show="addAdmin.Salary.$touched && addAdmin.Salary.$invalid">The
+                            salary is
+                            required.</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="JoiningDate">JoiningDate</label>
+                    <div class="col-md-10">
+                        <input class="form-control text-box single-line" ng-model="admin.JoiningDate" data-val="true"
+                            data-val-date="The field JoiningDate must be a date."
+                            data-val-required="The JoiningDate field is required." id="JoiningDate" name="JoiningDate"
+                            type="date" value="" required/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Marital_status">Marital_status</label>
+                    <div class="col-md-10">
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="radio" ng-model="admin.Marital_status" name="Marital_status"
+                                        id="Marital_status" value="Married">
+                                    <label>Married</label>
+
+                                    <input type="radio" ng-model="admin.Marital_status" name="Marital_status"
+                                        id="Marital_status" value="Unmarried">
+                                    <label>Unmarried</label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Blood_group">Blood_group</label>
+                    <div class="col-md-10">
+                        <table>
+                            <tr>
+                                <td>
+                                    <select ng-model="admin.Blood_group" name="Blood_group" id="Blood_group">
+                                        <option value="" selected disabled>Please, Select blood group from here !!
+                                        </option>
+                                        <option value="A+">A+</option>
+                                        <option value="A-">A-</option>
+                                        <option value="B+">B+</option>
+                                        <option value="B-">B-</option>
+                                        <option value="O+">O+</option>
+                                        <option value="O-">O-</option>
+                                        <option value="AB+">AB+</option>
+                                        <option value="AB-">AB-</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Create" ng-click="createAdmin(admin)" class="btn btn-success" />
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

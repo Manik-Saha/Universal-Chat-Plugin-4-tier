@@ -1,0 +1,119 @@
+<html>
+
+<head>
+    <title>Create Organization</title>
+</head>
+
+<body>
+    <div>
+        <br><br><br><a class="btn btn-success" href="#!Organization/All">Back to List</a>
+    </div>
+    <div>
+        <form name="addOrganization" method="post">
+            <br>
+            <h4>Register Organization</h4>
+
+            <div class="form-group">
+                <label class="control-label col-md-2" for="Name">Name</label>
+                <div class="col-md-10">
+                    <input class="form-control text-box single-line" ng-model="o.name" placeholder="" id="Name"
+                        name="Name" type="text" value="" required />
+                    <span style="color:red" ng-show="addOrganization.Name.$touched && addOrganization.Name.$invalid">The
+                        first name is
+                        required.</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-2" for="Email">Email</label>
+                <div class="col-md-10">
+                    <input class="form-control text-box single-line" ng-model="o.Email" id="Email" name="Email"
+                        type="text" value="" required />
+                    <span style="color:red"
+                        ng-show="addOrganization.Email.$touched && addOrganization.Email.$invalid">The Email
+                        is not
+                        valid.</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-2" for="Password">Password</label>
+                <div class="col-md-10">
+                    <input class="form-control text-box single-line" ng-model="o.Password" id="Password" name="Password"
+                        type="password" value="" required />
+                    <span style="color:red"
+                        ng-show="addOrganization.Password.$touched && addOrganization.Password.$invalid">The
+                        Password is
+                        required.</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-2" for="CPassword">Confirm Password</label>
+                <div class="col-md-10">
+                    <input class="form-control text-box single-line" id="CPassword" name="CPassword" type="password"
+                        value="" required />
+                    <span style="color:red"
+                        ng-show="addOrganization.CPassword.$touched && addOrganization.CPassword.$invalid">The
+                        Conform Password is
+                        required.</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-2" for="Username">Username</label>
+                <div class="col-md-10">
+                    <input class="form-control text-box single-line" ng-model="o.Username" id="Username" name="Username"
+                        type="text" value="" required />
+                    <span style="color:red"
+                        ng-show="addOrganization.Username.$touched && addOrganization.Username.$invalid">The
+                        Address is
+                        required.</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-2" for="Address">Address</label>
+                <div class="col-md-10">
+                    <input class="form-control text-box single-line" ng-model="o.Address" id="Address" name="Address"
+                        type="text" value="" required />
+                    <span style="color:red"
+                        ng-show="addOrganization.Addresss.$touched && addOrganization.Addresss.$invalid">The
+                        Address is
+                        required.</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-2" for="Phone">Phone</label>
+                <div class="col-md-10">
+                    <input class="form-control text-box single-line" ng-model="o.Phone" id="Phone" name="Phone"
+                        type="text" value="" required />
+                    <span style="color:red"
+                        ng-show="addOrganization.Phone.$touched && addOrganization.Phone.$invalid">The Phone
+                        is
+                        required.</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-2" for="Website">Website</label>
+                <div class="col-md-10">
+                    <input class="form-control text-box single-line" ng-model="o.Website" placeholder="" id="Website"
+                        name="Website" type="text" value="" required />
+                    <span style="color:red"
+                        ng-show="addOrganization.Website.$touched && addOrganization.Website.$invalid">The Website
+                        is
+                        required.</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Create" ng-click="createOrganization(o)" class="btn btn-success" />
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

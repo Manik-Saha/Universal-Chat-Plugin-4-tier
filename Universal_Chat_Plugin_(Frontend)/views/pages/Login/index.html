@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>Login Here</title>
+</head>
+
+<body>
+    <div style="align-content: center; padding-top: 20px;">
+        <form method="post">
+            <h3>
+            </h3><br />
+            <h4><br>
+                <span style="color:red">{{error}}</span>
+                <input class="form-control text-box single-line" type="text" ng-model="l.Username" name="Username"
+                    placeholder="Username" required /><br />
+                <span style="color:red" ng-show="addAdmin.Username.$touched && addAdmin.Username.$invalid">The
+                    Username is
+                    required.</span>
+                <input class="form-control text-box single-line" ng-model="l.Password" type="password" name="Password"
+                    placeholder="Password" required /><br />
+                <span style="color:red" ng-show="addAdmin.Password.$touched && addAdmin.Password.$invalid">The
+                    Password is
+                    required.</span>
+                </br>
+                <input style="color:brown" class="btn btn-success" ng-click="login(l)" type="submit"
+                    name="submit" value="Login" />
+            </h4>
+        </form>
+    </div>
+</body>
+
+</html>

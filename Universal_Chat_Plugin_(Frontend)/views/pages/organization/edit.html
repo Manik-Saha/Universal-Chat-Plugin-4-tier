@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <title>Create Admin</title>
+</head>
+
+<body>
+    <div>
+        <br><br><br><a class="btn btn-success" href="#!Organization/All">Back to List</a>
+    </div>
+    <div>
+        <form action="/Organization/Create" method="post">
+                <br><h4>Register Organization</h4>
+                <hr />
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Name">Name</label>
+                    <div class="col-md-10">
+                        <input class="form-control text-box single-line" ng-model="editOrganization.Name" id="Name" name="Name" type="text" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Email">Email</label>
+                    <div class="col-md-10">
+                        <input class="form-control text-box single-line" ng-model="editOrganization.Email" id="Email" name="Email" type="text" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Username">Username</label>
+                    <div class="col-md-10">
+                        <input class="form-control text-box single-line" ng-model="editOrganization.Username" id="Username" name="Username" type="text"
+                            />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Address">Address</label>
+                    <div class="col-md-10">
+                        <input class="form-control text-box single-line" ng-model="editOrganization.Address" id="Address" name="Address" type="text" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Phone">Phone</label>
+                    <div class="col-md-10">
+                        <input class="form-control text-box single-line"  ng-model="editOrganization.Phone" id="Phone" name="Phone" type="text"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Website">Website</label>
+                    <div class="col-md-10">
+                        <input class="form-control text-box single-line" ng-model="editOrganization.Website" id="Website" name="Website" type="text" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Update information" ng-click="saveOrganization(editOrganization)" class="btn btn-success" />
+                    </div>
+                </div>
+        </form>
+    </div>
+</body>
+
+</html>

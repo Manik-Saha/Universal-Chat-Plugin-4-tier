@@ -1,0 +1,120 @@
+<html>
+
+<head>
+    <title>Create User</title>
+</head>
+
+<body>
+    <div>
+        <br><br><br><a class="btn btn-success" href="#!User/All">Back to List</a>
+    </div>
+    <div>
+        <form name="addUser" method="post">
+            <br>
+            <h4>Register New User</h4><br>
+            <fieldset>
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="First_name">First_name</label>
+                    <div class="col-md-10">
+                        <input class="form-control text-box single-line" ng-model="u.First_name" id="First_name"
+                            name="First_name" type="text" value="" />
+                        <span style="color:red" ng-show="addUser.First_name.$touched && addUser.First_name.$invalid">The
+                            first name is
+                            required.</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Last_name">Last_name</label>
+                    <div class="col-md-10">
+                        <input class="form-control text-box single-line" ng-model="u.Last_name" id="Last_name"
+                            name="Last_name" type="text" value="" />
+                        <span style="color:red" ng-show="addUser.Last_name.$touched && addUser.Last_name.$invalid">The
+                            last name is
+                            required.</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Password">Password</label>
+                    <div class="col-md-10">
+                        <input class="form-control text-box single-line" ng-model="u.Password" id="Password"
+                            name="Password" type="password" value="" />
+                        <span style="color:red" ng-show="addUser.Password.$touched && addUser.Password.$invalid">The
+                            Password is
+                            required.</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="CPassword">Confirm Password</label>
+                    <div class="col-md-10">
+                        <input class="form-control text-box single-line" id="CPassword" name="CPassword" type="password"
+                            value="" />
+                        <span style="color:red" ng-show="addUser.Password.$touched && addUser.Password.$invalid">The
+                            Conform Password is
+                            required.</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Username">Username</label>
+                    <div class="col-md-10">
+                        <input class="form-control text-box single-line" ng-model="u.Username" id="Username"
+                            name="Username" type="text" value="" />
+                        <span style="color:red" ng-show="addUser.Username.$touched && addUser.Username.$invalid">The
+                            Address is
+                            required.</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Gender">Gender</label>
+                    <div class="col-md-10">
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="radio" ng-model="u.Gender" name="Gender" id="Gender" value="Male">
+                                    <label>Male</label>
+
+                                    <input type="radio" ng-model="u.Gender" name="Gender" id="Gender" value="Female">
+                                    <label>Female</label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Email">Email</label>
+                    <div class="col-md-10">
+                        <input class="form-control text-box single-line" ng-model="u.Email" id="Email" name="Email"
+                            type="text" value="" />
+                        <span style="color:red" ng-show="addUser.Email.$touched && addUser.Email.$invalid">The Email
+                            is not
+                            valid.</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Phone">Phone</label>
+                    <div class="col-md-10">
+                        <input class="form-control text-box single-line" ng-model="u.Phone" id="Phone" name="Phone"
+                            type="text" value="" />
+                        <span style="color:red" ng-show="addUser.Phone.$touched && addUser.Phone.$invalid">The Phone
+                            is
+                            required.</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Create" ng-click="createUser(u)" class="btn btn-success" />
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

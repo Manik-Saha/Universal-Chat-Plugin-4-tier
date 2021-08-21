@@ -1,0 +1,93 @@
+<html>
+
+<head>
+    <title>Create User</title>
+</head>
+
+<body>
+    <div>
+        <br><br><br><a class="btn btn-success" href="#!User/All">Back to List</a>
+    </div>
+    <div>
+        <form action="/User/Create" method="post">
+            <div class="form-horizontal">
+                <br>
+                <h4>User</h4>
+                <hr />
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="First_name">First_name</label>
+                    <div class="col-md-10">
+                        <input class="form-control text-box single-line" data-val="true"
+                            data-val-required="The First_name field is required." ng-model="editUser.First_name"
+                            id="First_name" name="First_name" type="text" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Last_name">Last_name</label>
+                    <div class="col-md-10">
+                        <input class="form-control text-box single-line" data-val="true"
+                            data-val-required="The Last_name field is required." ng-model="editUser.Last_name"
+                            id="Last_name" name="Last_name" type="text" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Username">Username</label>
+                    <div class="col-md-10">
+                        <input class="form-control text-box single-line" data-val="true"
+                            data-val-required="The Username field is required." ng-model="editUser.Username"
+                            id="Username" name="Username" type="text" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Gender">Gender</label>
+                    <div class="col-md-10">
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="radio" ng-model="editUser.Gender" name="Gender" id="Gender"
+                                        value="Male">
+                                    <label>Male</label>
+
+                                    <input type="radio" ng-model="editUser.Gender" name="Gender" id="Gender"
+                                        value="Female">
+                                    <label>Female</label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Email">Email</label>
+
+                    <div class="col-md-10">
+                        <input class="form-control text-box single-line" data-val="true"
+                            data-val-required="The Email field is required." ng-model="editUser.Email" id="Email"
+                            name="Email" type="text" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Phone">Phone</label>
+
+                    <div class="col-md-10">
+                        <input class="form-control text-box single-line" data-val="true"
+                            data-val-required="The Phone field is required." ng-model="editUser.Phone" id="Phone"
+                            name="Phone" type="text" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Update information" ng-click="saveUser(editUser)"
+                            class="btn btn-success" />
+                    </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

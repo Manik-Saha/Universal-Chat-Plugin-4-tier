@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Admin Dashboard</title>
+    <script src="app/lib/angular.min.js"></script>
+    <script src="app/lib/angular.route.min.js"></script>
+    <script src="app/app.js"></script>
+    <!-- plugins:js -->
+    <script src="content/vendors/js/vendor.bundle.base.js"></script>
+    <script src="content/vendors/js/vendor.bundle.addons.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page-->
+    <!-- End plugin js for this page-->
+    <!-- inject:js -->
+    <script src="content/js/off-canvas.js"></script>
+    <script src="content/js/hoverable-collapse.js"></script>
+    <script src="content/js/misc.js"></script>
+    <script src="content/js/settings.js"></script>
+    <script src="content/js/todolist.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page-->
+    <script src="content/js/dashboard.js"></script>
+    <!-- End custom js for this page-->
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="content/vendors/iconfonts/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="content/vendors/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="content/vendors/css/vendor.bundle.addons.css">
+    <!-- endinject -->
+    <!-- plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="content/css/style.css">
+    <!-- endinject -->
+    <link rel="shortcut icon" href="http://www.urbanui.com/" />
+</head>
+
+<body ng-app="UniversalChatPlugin">
+    <div class="container-scroller">
+        <div ng-include="'views/inc/admin_nav/top_nav.html'"></div>
+        <div class="container-fluid page-body-wrapper">
+            <div ng-include="'views/inc/admin_nav/side_nav.html'"></div>
+            <div class="main-panel">
+                <div class="content-wrapper">
+                    <div ng-view></div>
+                    <div ng-include="'views/index.html'"></div>
+                </div>
+            </div>
+            <div ng-include="'views/footer/footer.html'"></div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!-- Add Services here -->
+<script src="app/services/ajax.js"></script>
+
+
+<!-- Add Controllers here -->
+<script src="app/controllers/allAdmin.js"></script>
+<script src="app/controllers/createAdmin.js"></script>
+<script src="app/controllers/deleteAdmin.js"></script>
+<script src="app/controllers/getDeleteAdmin.js"></script>
+<script src="app/controllers/detailsAdmin.js"></script>
+<script src="app/controllers/editAdmin.js"></script>
+
+<script src="app/controllers/allOrganization.js"></script>
+<script src="app/controllers/CreateOrganization.js"></script>
+<script src="app/controllers/deleteOrganization.js"></script>
+<script src="app/controllers/detailsOrganization.js"></script>
+<script src="app/controllers/editOrganization.js"></script>
+
+<script src="app/controllers/allUser.js"></script>
+<script src="app/controllers/createUser.js"></script>
+<script src="app/controllers/deleteUser.js"></script>
+<script src="app/controllers/detailsUser.js"></script>
+<script src="app/controllers/editUser.js"></script>

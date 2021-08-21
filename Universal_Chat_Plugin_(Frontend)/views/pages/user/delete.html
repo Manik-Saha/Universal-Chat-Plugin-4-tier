@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>User Details</title>
+</head>
+
+<body>
+    <div>
+            <div>
+                <br><br><br><a class="btn btn-success" href="#!User/All">Back to List</a><br>
+            </div>
+        <br><h2>Details user</h2>
+        <form>
+            <br>User ID :   {{ deleteUser.Id}}
+            <br>First Name :{{ deleteUser.First_name }}
+            <br>Last Name : {{ deleteUser.Last_name }}
+            <br>Username :  {{ deleteUser.Username }}
+            <br>Gender :    {{ deleteUser.Gender }}
+            <br>E-mail :    {{ deleteUser.Email }}
+            <br>Phone :     {{ deleteUser.Phone }}
+        </form>
+    </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <br><input type="submit" value="Delete" ng-click="deleteUserr()" class="btn btn-danger" />
+                    </div>
+                </div>
+</body>
+
+</html>
